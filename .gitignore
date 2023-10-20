@@ -17,7 +17,7 @@ out/
 !**/src/test/**/out/
 
 ### idea http requests ###
-.idea/httpRequests
+.idea/httpRequests/
 
 ### Eclipse ###
 .apt_generated
