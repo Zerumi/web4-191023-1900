@@ -38,7 +38,7 @@ dependencies {
   implementation('org.springframework.security:spring-security-web:6.1.2')
   implementation('org.springframework.security:spring-security-config:6.1.2')
   implementation('org.springframework.security:spring-security-taglibs:6.1.2')
-  implementation('com.h2database:h2:1.4.204')
+  implementation('com.h2database:h2:1.4.200')
 
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
