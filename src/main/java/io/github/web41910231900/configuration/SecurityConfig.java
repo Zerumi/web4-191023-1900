@@ -51,7 +51,7 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests((ar) -> {
-            ar.requestMatchers(mvc.pattern("/hello")).hasRole("USER");
+            //ar.requestMatchers(mvc.pattern("/hello")).hasRole("USER");
             ar.anyRequest().permitAll();
         }).httpBasic(withDefaults());
         return http.build();
