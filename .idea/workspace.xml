@@ -7,16 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: add base angular front">
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: update security config">
+      <change afterPath="$PROJECT_DIR$/web4-191023-1900/src/environments/environment.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/environments/environment.prod.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +112,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web4-191023-1900/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server (web4-191023-1900)">
@@ -234,7 +231,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
-      <workItem from="1697835247428" duration="37949000" />
+      <workItem from="1697835247428" duration="38273000" />
     </task>
     <task id="LOCAL-00001" summary="feat: hello world on spring rest api">
       <option name="closed" value="true" />
@@ -324,7 +321,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697897875345</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: angular project structure">
+      <option name="closed" value="true" />
+      <created>1697920741152</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1697920741152</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: update security config">
+      <option name="closed" value="true" />
+      <created>1697920773529</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697920773529</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +355,8 @@
     <MESSAGE value="feat: security jdbc (h2 db) and securing some controllers" />
     <MESSAGE value="chore: update gitignore" />
     <MESSAGE value="feat: add base angular front" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add base angular front" />
+    <MESSAGE value="feat: angular project structure" />
+    <MESSAGE value="feat: update security config" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update security config" />
   </component>
 </project>
