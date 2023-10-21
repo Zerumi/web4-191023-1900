@@ -1,6 +1,7 @@
 plugins {
   id 'java'
   id 'war'
+  id 'org.siouan.frontend-jdk17' version '8.0.0'
 }
 
 group 'io.github'
@@ -18,6 +19,14 @@ tasks.withType(JavaCompile).configureEach {
   options.encoding = 'UTF-8'
 }
 
+frontend {
+  //nodeVersion = '10.15.3'
+  // See 'scripts' section in your 'package.json file'
+  //cleanScript = 'run clean'
+  //assembleScript = 'run assemble'
+  //checkScript = 'run check'
+}
+
 dependencies {
   compileOnly('jakarta.servlet:jakarta.servlet-api:6.0.0')
   implementation('org.springframework:spring-context:6.0.13')
@@ -29,7 +38,7 @@ dependencies {
   implementation('org.springframework.security:spring-security-web:6.1.2')
   implementation('org.springframework.security:spring-security-config:6.1.2')
   implementation('org.springframework.security:spring-security-taglibs:6.1.2')
-  implementation('com.h2database:h2:1.4.200')
+  implementation('com.h2database:h2:1.4.204')
 
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
