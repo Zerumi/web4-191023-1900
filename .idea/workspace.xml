@@ -7,10 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: update security config">
-      <change afterPath="$PROJECT_DIR$/web4-191023-1900/src/environments/environment.ts" afterDir="false" />
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: angular new data component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +233,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
-      <workItem from="1697835247428" duration="38273000" />
+      <workItem from="1697835247428" duration="41077000" />
     </task>
     <task id="LOCAL-00001" summary="feat: hello world on spring rest api">
       <option name="closed" value="true" />
@@ -337,7 +339,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697920773529</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: angular environment">
+      <option name="closed" value="true" />
+      <created>1697921163596</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1697921163596</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: angular new data component">
+      <option name="closed" value="true" />
+      <created>1697921192156</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1697921192156</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +375,8 @@
     <MESSAGE value="feat: add base angular front" />
     <MESSAGE value="feat: angular project structure" />
     <MESSAGE value="feat: update security config" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update security config" />
+    <MESSAGE value="feat: angular environment" />
+    <MESSAGE value="feat: angular new data component" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: angular new data component" />
   </component>
 </project>
