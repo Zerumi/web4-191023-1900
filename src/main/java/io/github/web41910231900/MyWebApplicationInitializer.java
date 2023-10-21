@@ -23,9 +23,5 @@ public class MyWebApplicationInitializer implements WebApplicationInitializer {
         ServletRegistration.Dynamic registration = servletContext.addServlet("app", servlet);
         registration.setLoadOnStartup(1);
         registration.addMapping("/app/*");
-
-        // define security
-        context.register(SecurityConfig.class);
-        //createContext();
     }
 }
