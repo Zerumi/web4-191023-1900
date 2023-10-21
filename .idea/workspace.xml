@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="chore: update .gitignore">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/CheckArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/request/CheckHitRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/response/PostResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/util/AreaResultChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: models of area checking, rest api integration of check models">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/Greeting.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +155,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
-      <workItem from="1697835247428" duration="10388000" />
+      <workItem from="1697835247428" duration="11170000" />
     </task>
     <task id="LOCAL-00001" summary="feat: hello world on spring rest api">
       <option name="closed" value="true" />
@@ -186,7 +181,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697843907622</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix: typo in .gitignore">
+      <option name="closed" value="true" />
+      <created>1697846206118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697846206118</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: models of area checking, rest api integration of check models">
+      <option name="closed" value="true" />
+      <created>1697846259386</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697846259386</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +207,8 @@
     <MESSAGE value="feat: hello world on spring rest api" />
     <MESSAGE value="chore: web and ide configuration" />
     <MESSAGE value="chore: update .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update .gitignore" />
+    <MESSAGE value="fix: typo in .gitignore" />
+    <MESSAGE value="feat: models of area checking, rest api integration of check models" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: models of area checking, rest api integration of check models" />
   </component>
 </project>
