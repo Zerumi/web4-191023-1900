@@ -22,8 +22,13 @@ dependencies {
   compileOnly('jakarta.servlet:jakarta.servlet-api:6.0.0')
   implementation('org.springframework:spring-context:6.0.13')
   implementation('org.springframework:spring-webmvc:6.0.13')
+
   implementation('org.springframework.data:spring-data-jdbc:3.1.2')
   implementation('org.postgresql:postgresql:42.6.0')
+
+  implementation('org.springframework.security:spring-security-web:6.1.2')
+  implementation('org.springframework.security:spring-security-config:6.1.2')
+  implementation('org.springframework.security:spring-security-taglibs:6.1.2')
 
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
