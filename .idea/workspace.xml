@@ -9,10 +9,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: angular new data component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +49,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Zerumi"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Zerumi&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -71,38 +73,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/zerumi/IdeaProjects/web4-191023-1900/src/main/webapp/WEB-INF",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "ts.external.directory.path": "/Users/zerumi/IdeaProjects/web4-191023-1900/web4-191023-1900/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zerumi/IdeaProjects/web4-191023-1900/src/main/webapp/WEB-INF&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/zerumi/IdeaProjects/web4-191023-1900/web4-191023-1900/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
-  <component name="QodanaHighlightedReportService">
-    <option name="localRunNotPublishedPersistedInfo">
-      <LocalReportPersistedInfo>
-        <option name="path" value="/private/var/folders/p9/np5ft9xj5j3fbx97nqd_w_000000gn/T/qodana_output/qodana.sarif.json" />
-        <option name="reportGuid" value="71b31b96-495f-41c4-9ba8-5ff02ad20f1e" />
-        <option name="reportName" value="web4-191023-1900/qodana/2023-10-21" />
-      </LocalReportPersistedInfo>
-    </option>
-  </component>
+}</component>
   <component name="QodanaIsSelectedPersistenceService">
     <option name="selectedOrLoading" value="true" />
   </component>
@@ -119,7 +112,7 @@
       <recent name="$PROJECT_DIR$/web4-191023-1900/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server (web4-191023-1900)">
+  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 29.0.1.Final">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
