@@ -1,9 +1,9 @@
-let pointId = 0;
-const points = new Map();
-let graph_click_enabled = false;
-const enable_graph_button = document.getElementById('enable-graph');
-const elt = document.getElementById('graph');
-const calculator = Desmos.GraphingCalculator(elt, {
+var pointId_ = 0;
+var points = new Map();
+var graph_click_enabled = false;
+var enable_graph_button = document.getElementById('enable-graph');
+var elt = document.getElementById('graph');
+var calculator = Desmos.GraphingCalculator(elt, {
   keypad: false,
   expressions: false,
   settingsMenu: false,
@@ -23,11 +23,11 @@ calculator.setMathBounds({
   top: 5
 });
 
-let newDefaultState = calculator.getState();
+var newDefaultState = calculator.getState();
 calculator.setDefaultState(newDefaultState);
 
 function drawGraphByR(r) {
-  for (let i = 0; i < pointId; i++) {
+  for (let i = 0; i < pointId_; i++) {
     calculator.removeExpression({id: 'point' + i});
   }
   points.forEach((v,k) => {
@@ -72,9 +72,9 @@ function drawPointXY(x, y) {
 function drawPointXYRRes(x, y, r, result) {
   if (r === undefined)
     r = 0;
-  points.set('point' + pointId, {x, y, r, result})
+  points.set('point' + pointId_, {x, y, r, result})
   calculator.setExpression({
-    id: 'point' + pointId++,
+    id: 'point' + pointId_++,
     latex: '(' + x + ', ' + y + ')',
     color: result ? Desmos.Colors.PURPLE : Desmos.Colors.BLUE
   });

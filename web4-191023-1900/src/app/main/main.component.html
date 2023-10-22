@@ -1,0 +1,165 @@
+ <!--- legacy-чертовщина) -->
+  <div id="container" class="margin">
+    <div id="header" class="blured-container round-container margin">
+      <p>web3-290923-1800</p>
+      <p>by Afanasyev Kirill Aleksandrovich, group no. P3206</p>
+      <p>Variant no. 1800</p>
+    </div>
+    <div id="main" class="margin">
+      <div id="choose" class="blured-container round-container margin">
+        <p>Enter parameters:</p>
+        <p><i>Notice! </i> <b>Every</b> parameter <b>should be filled!</b></p>
+        <form id="choose-form">
+          <div id="x-select-container" class="select-container margin">
+            <label for="x-select">Choose X:</label>
+            <div class="select-input-container">
+              <div id="x-select-input">
+                <div id="x-select" class="select-radio-container">
+                  <div class="flex align-items-center">
+                    <p-radioButton id="x-select--3" name="x-select" value="-3" [(ngModel)]="x_select" inputId="r-select--3"></p-radioButton>
+                    <label for="x-select--3" class="ml-2">-3</label>
+                  </div>
+
+                  <div class="flex align-items-center">
+                    <p-radioButton id="x-select--2" name="x_select" value="-2" [(ngModel)]="x_select" inputId="r-select--2"></p-radioButton>
+                    <label for="x-select--2" class="ml-2">-2</label>
+                  </div>
+
+                  <div class="flex align-items-center">
+                    <p-radioButton id="x-select--1" name="x_select" value="-1" [(ngModel)]="x_select" inputId="r-select--1"></p-radioButton>
+                    <label for="x-select--1" class="ml-2">-1</label>
+                  </div>
+
+                  <div class="flex align-items-center">
+                    <p-radioButton id="x-select-0" name="x_select" value="0" [(ngModel)]="x_select" inputId="r-select-0"></p-radioButton>
+                    <label for="x-select-0" class="ml-2">0</label>
+                  </div>
+
+                  <div class="flex align-items-center">
+                    <p-radioButton id="x-select-1" name="x_select" value="1" [(ngModel)]="x_select" inputId="r-select-1"></p-radioButton>
+                    <label for="x-select-0" class="ml-2">1</label>
+                  </div>
+
+                  <div class="flex align-items-center">
+                    <p-radioButton id="x-select-2" name="x_select" value="2" [(ngModel)]="x_select" inputId="r-select-2"></p-radioButton>
+                    <label for="x-select-0" class="ml-2">2</label>
+                  </div>
+
+                  <div class="flex align-items-center">
+                    <p-radioButton id="x-select-3" name="x_select" value="3" [(ngModel)]="x_select" inputId="r-select-3"></p-radioButton>
+                    <label for="x-select-0" class="ml-2">3</label>
+                  </div>
+
+                  <div class="flex align-items-center">
+                    <p-radioButton id="x-select-4" name="x_select" value="4" [(ngModel)]="x_select" inputId="r-select-4"></p-radioButton>
+                    <label for="x-select-0" class="ml-2">4</label>
+                  </div>
+
+                  <div class="flex align-items-center">
+                    <p-radioButton id="x-select-5" name="x_select" value="5" [(ngModel)]="x_select" inputId="r-select-5"></p-radioButton>
+                    <label for="x-select-0" class="ml-2">5</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="y-select-container" class="select-container margin">
+            <label for="y-select">Enter Y:</label>
+            <div class="select-input-container">
+              <div id="y-select-input" class="select-input-container">
+                <p-slider id="y-select" name="y-select" [min]="-5" [max]="5" [step]="0.1" [(ngModel)]="y_select"></p-slider>
+              </div>
+            </div>
+          </div>
+          <div id="r-select-container" class="select-container margin">
+            <label for="r-select-input">Choose R:</label>
+            <div class="select-input-container">
+              <div id="r-select-input" class="select-radio-container">
+                <div class="flex align-items-center">
+                  <p-radioButton id="r-select--3" name="r_select" value="-3" [(ngModel)]="r_select" inputId="x-select--3"></p-radioButton>
+                  <label for="x-select--3" class="ml-2">-3</label>
+                </div>
+
+                <div class="flex align-items-center">
+                  <p-radioButton id="r-select--2" name="r_select" value="-2" [(ngModel)]="r_select" inputId="x-select--2"></p-radioButton>
+                  <label for="x-select--2" class="ml-2">-2</label>
+                </div>
+
+                <div class="flex align-items-center">
+                  <p-radioButton id="r-select--1" name="r_select" value="-1" [(ngModel)]="r_select" inputId="x-select--1"></p-radioButton>
+                  <label for="x-select--1" class="ml-2">-1</label>
+                </div>
+
+                <div class="flex align-items-center">
+                  <p-radioButton id="r-select-0" name="r_select" value="0" [(ngModel)]="r_select" inputId="x-select-0"></p-radioButton>
+                  <label for="x-select-0" class="ml-2">0</label>
+                </div>
+
+                <div class="flex align-items-center">
+                  <p-radioButton id="r-select-1" name="r_select" value="1" [(ngModel)]="r_select" inputId="x-select-1"></p-radioButton>
+                  <label for="x-select-0" class="ml-2">1</label>
+                </div>
+
+                <div class="flex align-items-center">
+                  <p-radioButton id="r-select-2" name="r_select" value="2" [(ngModel)]="r_select" inputId="x-select-2"></p-radioButton>
+                  <label for="x-select-0" class="ml-2">2</label>
+                </div>
+
+                <div class="flex align-items-center">
+                  <p-radioButton id="r-select-3" name="r_select" value="3" [(ngModel)]="r_select" inputId="x-select-3"></p-radioButton>
+                  <label for="x-select-0" class="ml-2">3</label>
+                </div>
+
+                <div class="flex align-items-center">
+                  <p-radioButton id="r-select-4" name="r_select" value="4" [(ngModel)]="r_select" inputId="x-select-4"></p-radioButton>
+                  <label for="x-select-0" class="ml-2">4</label>
+                </div>
+
+                <div class="flex align-items-center">
+                  <p-radioButton id="r-select-5" name="r_select" value="5" [(ngModel)]="r_select" inputId="x-select-5"></p-radioButton>
+                  <label for="x-select-0" class="ml-2">5</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="submit-container" class="margin">
+            <button id="submit" type="submit" pButton label="Get disappointed in your life"></button>
+          </div>
+        </form>
+
+        <div id="another-way-container" class="select-container margin">
+          <label for="enable-graph">Or...</label>
+          <button id="enable-graph" type="button" pButton onclick="enable_graph()" label="Enable graph aiming"></button>
+        </div>
+        <form>
+          <input type="hidden" name="clear" value="1" />
+          <div id="clear-table-container" class="select-container margin">
+            <label for="clear-table">You may also</label>
+            <button id="clear-table" pButton label="Clear table">
+
+            </button>
+          </div>
+        </form>
+        <form>
+          <div id="return-index-container" class="select-container margin">
+            <button id="return-to-index" pButton label="Return to index page"></button>
+          </div>
+        </form>
+      </div>
+
+      <div id="graph-container" class="blured-container round-container margin">
+        <div id="graph">
+
+        </div>
+      </div>
+      <div id="result-table-container" class="blured-container margin">
+
+      </div>
+    </div>
+    <div id="footer" class="blured-container round-container margin">
+      <p>Copyright © Zerumi, 2023. Licensed under <a href="../LICENSE">ISC license</a>. Plagiarism is prohibited.</p>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6">
+
+  </script>
