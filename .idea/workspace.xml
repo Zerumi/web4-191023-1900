@@ -7,25 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: front from 3rd lab">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/auth/CurrentUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/auth/CurrentUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/auth/session/SessionFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/auth/session/SessionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/dsl/CustomDsl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/request/UserRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/response/AuthSessionResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/service/CurrentUserService.java" afterDir="false" />
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="fix: update response types in controllers">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/dsl/CustomDsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/dsl/CustomDsl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/CheckArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/CheckArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/request/CheckHitRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/request/CheckHitRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/response/PostResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/response/PostResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/model.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +44,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -75,6 +66,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/web4-191023-1900/node_modules/cosmiconfig/package.json" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -85,29 +79,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/zerumi/IdeaProjects/web4-191023-1900/src/main/webapp/WEB-INF&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/zerumi/IdeaProjects/web4-191023-1900/web4-191023-1900/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "20.8.1",
+    "javascript.nodejs.core.library.typings.version": "20.8.1",
+    "last_opened_file_path": "/Users/zerumi/IdeaProjects/web4-191023-1900/src/main/webapp/WEB-INF",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "ts.external.directory.path": "/Users/zerumi/IdeaProjects/web4-191023-1900/web4-191023-1900/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="QodanaIsSelectedPersistenceService">
     <option name="selectedOrLoading" value="true" />
   </component>
@@ -121,6 +117,7 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web4-191023-1900" />
       <recent name="$PROJECT_DIR$/web4-191023-1900/src" />
     </key>
   </component>
@@ -376,7 +373,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697984876422</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix: update response types in controllers">
+      <option name="closed" value="true" />
+      <created>1698024030140</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1698024030140</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +405,8 @@
     <MESSAGE value="feat: angular new data component" />
     <MESSAGE value="feat: primeng button example" />
     <MESSAGE value="feat: front from 3rd lab" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: front from 3rd lab" />
+    <MESSAGE value="fix: update response types in controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: update response types in controllers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -417,7 +423,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java</url>
-          <line>30</line>
+          <line>29</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
