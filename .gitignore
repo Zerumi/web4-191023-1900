@@ -49,4 +49,4 @@ bin/
 .frontend-gradle-plugin/
 
 ### jpa database credentials ###
-./src/main/resources/db.cfg
+/src/main/resources/db.cfg
