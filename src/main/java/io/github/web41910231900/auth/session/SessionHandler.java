@@ -31,4 +31,8 @@ public class SessionHandler {
                 )
         );
     }
+
+    public void invalidate(final String token) {
+        sessions.remove(token);
+    }
 }
