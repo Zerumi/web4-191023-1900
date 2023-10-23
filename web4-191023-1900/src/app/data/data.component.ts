@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
-import {AuthTokenResponse, LoginRequest, PostResponse} from "../model";
+import {AuthTokenResponse, LoginRequest} from "../model";
 import {Router} from "@angular/router";
 
 @Component({
@@ -17,20 +17,6 @@ export class DataComponent implements OnInit {
   constructor(private router: Router,
     private http: HttpClient) { }
   ngOnInit(): void {
-
-    this.http.get<PostResponse>(environment.backendURL + "/app/hello").subscribe(
-        {
-          next: (resp: PostResponse) => {
-              console.log(resp.message)
-          },
-
-          error: (err) => {
-              console.error(err);
-              console.log(err.message)
-          }
-        }
-    )
-
   }
 
   login() {

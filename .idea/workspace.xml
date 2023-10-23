@@ -7,16 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="fix: update response types in controllers">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: login form in front">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/dsl/CustomDsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/dsl/CustomDsl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +115,7 @@
       <recent name="$PROJECT_DIR$/web4-191023-1900/src" />
     </key>
   </component>
-  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 29.0.1.Final">
+  <component name="RunManager" selected="npm.Angular CLI Server (web4-191023-1900)">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -381,7 +375,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698024030140</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix: cross-origin policy">
+      <option name="closed" value="true" />
+      <created>1698025977112</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1698025977112</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: login form in front">
+      <option name="closed" value="true" />
+      <created>1698025994736</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1698025994736</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +416,9 @@
     <MESSAGE value="feat: primeng button example" />
     <MESSAGE value="feat: front from 3rd lab" />
     <MESSAGE value="fix: update response types in controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: update response types in controllers" />
+    <MESSAGE value="fix: cross-origin policy" />
+    <MESSAGE value="feat: login form in front" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: login form in front" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,4 +1,7 @@
 import {Component, AfterViewInit, OnInit} from '@angular/core';
+import {PostResponse} from "../model";
+import {environment} from "../../environments/environment";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-main',
@@ -11,6 +14,9 @@ export class MainComponent implements OnInit, AfterViewInit{
   x_select: string = '0';
   r_select: string = '0';
 
+  constructor(private http: HttpClient) {
+  }
+
   ngAfterViewInit() {
     //We're loading the player script on after view is loaded
     // @ts-ignore
@@ -18,7 +24,18 @@ export class MainComponent implements OnInit, AfterViewInit{
   }
 
   ngOnInit(): void {
+    this.http.get<PostResponse>(environment.backendURL + "/app/hello").subscribe(
+      {
+        next: (resp: PostResponse) => {
+          console.log(resp.message)
+        },
 
+        error: (err) => {
+          console.error(err);
+          console.log(err.message)
+        }
+      }
+    )
   }
 
 }

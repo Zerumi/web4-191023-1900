@@ -2,16 +2,26 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DataComponent } from "./data/data.component";
 import {MainComponent} from "./main/main.component";
+import {AuthenticationGuard} from "./authentication.guard";
 
 // making (связывание)
 const routes: Routes = [
   {
     path: '',
-    component: DataComponent
-  },
-  {
-    path: 'main',
-    component: MainComponent
+    canActivate: [AuthenticationGuard], children: [
+      {
+        path: '',
+        component: DataComponent
+      },
+      {
+        path: 'main',
+        component: MainComponent
+      },
+      {
+        path: '**',
+        redirectTo: ''
+      }
+    ]
   }
 ];
 
