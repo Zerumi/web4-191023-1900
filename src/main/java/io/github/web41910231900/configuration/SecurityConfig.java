@@ -1,93 +1,85 @@
 package io.github.web41910231900.configuration;
 
+import io.github.web41910231900.auth.session.SessionFilter;
+import io.github.web41910231900.configuration.dsl.CustomDsl;
+import io.github.web41910231900.service.CurrentUserService;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.ProviderManager;
-import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.factory.PasswordEncoderFactories;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.JdbcUserDetailsManager;
-import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.servlet.util.matcher.MvcRequestMatcher;
-import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 
-import javax.sql.DataSource;
+import java.util.Objects;
 
-import static org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.H2;
 import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
-
+    private final CurrentUserService userService;
+    private final SessionFilter sessionFilter;
+    private final PasswordEncoder passwordEncoder;
     private final MvcRequestMatcher.Builder mvc;
+    private final CustomDsl dsl;
 
     @Autowired
-    public SecurityConfig(MvcRequestMatcher.Builder mvc) {
+    public SecurityConfig(CurrentUserService userService,
+                          SessionFilter sessionFilter,
+                          PasswordEncoder passwordEncoder,
+                          MvcRequestMatcher.Builder mvc,
+                          CustomDsl dsl) {
+        this.userService = userService;
+        this.sessionFilter = sessionFilter;
+        this.passwordEncoder = passwordEncoder;
         this.mvc = mvc;
-    }
-
-    @Bean
-    DataSource dataSource() {
-        return new EmbeddedDatabaseBuilder()
-                .setType(H2)
-                .addScript(JdbcDaoImpl.DEFAULT_USER_SCHEMA_DDL_LOCATION)
-                .build();
+        this.dsl = dsl;
     }
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http.cors(AbstractHttpConfigurer::disable).csrf(AbstractHttpConfigurer::disable);
+        http.exceptionHandling(eh -> eh.authenticationEntryPoint(
+                (rq, rs, ex) -> rs.sendError(HttpServletResponse.SC_UNAUTHORIZED,
+                        ex.getLocalizedMessage())
+        ));
         http.authorizeHttpRequests((ar) -> {
-            //ar.requestMatchers(mvc.pattern("/hello")).hasRole("USER");
-            ar.anyRequest().permitAll();
+            ar.requestMatchers(mvc.pattern("/login")).permitAll();
+            ar.anyRequest().authenticated();
         }).httpBasic(withDefaults());
+        http.apply(dsl);
         return http.build();
     }
 
     @Bean
-    public AuthenticationManager authenticationManager(
-            UserDetailsService userDetailsService,
-            PasswordEncoder passwordEncoder) {
-        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
-        authenticationProvider.setUserDetailsService(userDetailsService);
-        authenticationProvider.setPasswordEncoder(passwordEncoder);
-
-        return new ProviderManager(authenticationProvider);
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof SecurityConfig that)) return false;
+        return Objects.equals(userService, that.userService) && Objects.equals(sessionFilter, that.sessionFilter) && Objects.equals(passwordEncoder, that.passwordEncoder) && Objects.equals(mvc, that.mvc);
     }
 
-    @Bean
-    UserDetailsManager users(DataSource dataSource) {
-        UserDetails user = User.builder()
-                .username("user")
-                .password("{bcrypt}$2a$10$GRLdNijSQMUvl/au9ofL.eDwmoohzzS7.rmNSJZ.0FxO/BTk76klW")
-                .roles("USER")
-                .build();
-        UserDetails admin = User.builder()
-                .username("admin")
-                .password("{bcrypt}$2a$10$GRLdNijSQMUvl/au9ofL.eDwmoohzzS7.rmNSJZ.0FxO/BTk76klW")
-                .roles("USER", "ADMIN")
-                .build();
-        JdbcUserDetailsManager users = new JdbcUserDetailsManager(dataSource);
-        users.createUser(user);
-        users.createUser(admin);
-        return users;
+    @Override
+    public int hashCode() {
+        return Objects.hash(userService, sessionFilter, passwordEncoder, mvc);
     }
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+    @Override
+    public String toString() {
+        return "SecurityConfig{" +
+                "userService=" + userService +
+                ", sessionFilter=" + sessionFilter +
+                ", passwordEncoder=" + passwordEncoder +
+                ", mvc=" + mvc +
+                '}';
     }
 }
