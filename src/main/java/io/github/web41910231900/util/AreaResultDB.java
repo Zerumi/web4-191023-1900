@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.security.Principal;
 import java.time.ZoneId;
+import java.util.List;
 
 @Component
 public class AreaResultDB {
@@ -33,5 +34,12 @@ public class AreaResultDB {
         entity.setExecutionTime(area.getExecutionTime());
         entity.setOwnerID(userRepository.findByUsername(username.getName()));
         areaRepository.save(entity);
+    }
+
+    public List<CheckArea> getAllByUsername(Principal principal) {
+        List<CheckAreaEntity> resultEntity = areaRepository
+                .findAllByOwnerID(userRepository.findByUsername(principal.getName()));
+
+        return resultEntity.stream().map(CheckArea::fromEntity).toList();
     }
 }

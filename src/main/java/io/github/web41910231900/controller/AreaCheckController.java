@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.security.Principal;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.List;
 
 @CrossOrigin
 @RestController
@@ -20,12 +21,12 @@ public class AreaCheckController {
     private final AreaResultDB db;
 
     @Autowired
-    public AreaCheckController(AreaResultDB db) {
+    public AreaCheckController(final AreaResultDB db) {
         this.db = db;
     }
 
     @PostMapping
-    public ResponseEntity<CheckArea> newCheckResult(Principal principal,
+    public ResponseEntity<CheckArea> newCheckResult(final Principal principal,
                                                     @RequestBody CheckHitRequestDTO rq) {
         final var result = new CheckArea();
         result.setRequest(rq);
@@ -40,5 +41,8 @@ public class AreaCheckController {
         return ResponseEntity.ok(result);
     }
 
-
+    @GetMapping
+    public ResponseEntity<List<CheckArea>> allResultsByUser(Principal principal) {
+        return ResponseEntity.ok(db.getAllByUsername(principal));
+    }
 }

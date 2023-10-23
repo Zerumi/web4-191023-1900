@@ -7,12 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="chore: some code enhancements">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/entity/repository/CheckAreaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/util/AreaResultDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___io_github___web4_191023_1900_1_0_SNAPSHOT_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___io_github___web4_191023_1900_1_0_SNAPSHOT_war__exploded_.xml" afterDir="false" />
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="fix: broken path in gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/auth/session/SessionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/auth/session/SessionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/entity/CheckAreaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/entity/CheckAreaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/CheckArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/CheckArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/util/AreaResultDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/util/AreaResultDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +250,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
       <workItem from="1697835247428" duration="41077000" />
-      <workItem from="1698073108201" duration="20933000" />
+      <workItem from="1698073108201" duration="22230000" />
     </task>
     <task id="LOCAL-00001" summary="feat: hello world on spring rest api">
       <option name="closed" value="true" />
@@ -539,15 +540,29 @@
       <option name="project" value="LOCAL" />
       <updated>1698099708669</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="feat: add results to db">
+      <option name="closed" value="true" />
+      <created>1698100130456</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1698100130456</updated>
+    </task>
+    <task id="LOCAL-00038" summary="fix: broken path in gitignore">
+      <option name="closed" value="true" />
+      <created>1698100155408</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1698100155408</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add base angular front" />
-    <MESSAGE value="feat: angular project structure" />
     <MESSAGE value="feat: update security config" />
     <MESSAGE value="feat: angular environment" />
     <MESSAGE value="feat: angular new data component" />
@@ -571,7 +586,9 @@
     <MESSAGE value="feat: add jpa configuration" />
     <MESSAGE value="feat: update user service" />
     <MESSAGE value="chore: some code enhancements" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: some code enhancements" />
+    <MESSAGE value="feat: add results to db" />
+    <MESSAGE value="fix: broken path in gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: broken path in gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -583,7 +600,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java</url>
-          <line>30</line>
+          <line>36</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

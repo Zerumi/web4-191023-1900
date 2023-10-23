@@ -1,9 +1,11 @@
 package io.github.web41910231900.model;
 
+import io.github.web41910231900.model.entity.CheckAreaEntity;
 import io.github.web41910231900.model.request.CheckHitRequestDTO;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.time.ZoneId;
 import java.util.Objects;
 
 public class CheckArea implements Serializable {
@@ -68,5 +70,18 @@ public class CheckArea implements Serializable {
                 ", executedAt=" + executedAt +
                 ", executionTime=" + executionTime +
                 '}';
+    }
+
+    public static CheckArea fromEntity(CheckAreaEntity entity) {
+        final CheckArea result = new CheckArea();
+        final CheckHitRequestDTO requestDTO = new CheckHitRequestDTO();
+        requestDTO.setX(entity.getX());
+        requestDTO.setY(entity.getY());
+        requestDTO.setR(entity.getR());
+        result.setRequest(requestDTO);
+        result.setResult(entity.isResult());
+        result.setExecutedAt(entity.getExecutedAt().atZone(ZoneId.systemDefault()).toInstant());
+        result.setExecutionTime(entity.getExecutionTime());
+        return result;
     }
 }
