@@ -10,7 +10,7 @@ import java.util.Objects;
 @Table(name="result_lab4", schema = "s367837")
 public class CheckAreaEntity implements Serializable {
     private long id;
-    private long ownerID;
+    private UserEntity ownerID;
     private double x;
     private double y;
     private double r;
@@ -28,12 +28,13 @@ public class CheckAreaEntity implements Serializable {
         this.id = id;
     }
 
-    @Column(name = "owner_id")
-    public long getOwnerID() {
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
+    public UserEntity getOwnerID() {
         return ownerID;
     }
 
-    public void setOwnerID(long ownerID) {
+    public void setOwnerID(UserEntity ownerID) {
         this.ownerID = ownerID;
     }
 

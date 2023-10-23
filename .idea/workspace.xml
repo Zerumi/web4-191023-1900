@@ -7,20 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: update user service">
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="chore: some code enhancements">
       <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/entity/repository/CheckAreaRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/util/AreaResultDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___io_github___web4_191023_1900_1_0_SNAPSHOT_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___io_github___web4_191023_1900_1_0_SNAPSHOT_war__exploded_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/MyWebApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/MyWebApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/auth/session/SessionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/auth/session/SessionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/JPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/JPAConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/dsl/CustomDsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/dsl/CustomDsl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/entity/CheckAreaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/entity/CheckAreaEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +249,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
       <workItem from="1697835247428" duration="41077000" />
-      <workItem from="1698073108201" duration="20592000" />
+      <workItem from="1698073108201" duration="20933000" />
     </task>
     <task id="LOCAL-00001" summary="feat: hello world on spring rest api">
       <option name="closed" value="true" />
@@ -540,14 +531,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698094985585</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="chore: some code enhancements">
+      <option name="closed" value="true" />
+      <created>1698099708669</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1698099708669</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: security jdbc (h2 db) and securing some controllers" />
     <MESSAGE value="feat: add base angular front" />
     <MESSAGE value="feat: angular project structure" />
     <MESSAGE value="feat: update security config" />
@@ -572,7 +570,8 @@
     <MESSAGE value="feat: add converting between jpa and model" />
     <MESSAGE value="feat: add jpa configuration" />
     <MESSAGE value="feat: update user service" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update user service" />
+    <MESSAGE value="chore: some code enhancements" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: some code enhancements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
