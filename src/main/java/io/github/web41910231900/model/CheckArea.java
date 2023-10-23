@@ -1,13 +1,13 @@
 package io.github.web41910231900.model;
 
-import io.github.web41910231900.model.request.CheckHitRequest;
+import io.github.web41910231900.model.request.CheckHitRequestDTO;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class CheckArea implements Serializable {
-    private CheckHitRequest request;
+    private CheckHitRequestDTO request;
     private boolean result;
     private LocalDateTime executedAt;
     private long executionTime;
@@ -16,11 +16,11 @@ public class CheckArea implements Serializable {
         super();
     }
 
-    public CheckHitRequest getRequest() {
+    public CheckHitRequestDTO getRequest() {
         return request;
     }
 
-    public void setRequest(CheckHitRequest request) {
+    public void setRequest(CheckHitRequestDTO request) {
         this.request = request;
     }
 
