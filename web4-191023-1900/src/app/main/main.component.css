@@ -1,6 +1,10 @@
-:host ::ng-deep .p-slider {
+:host /deep/ .p-slider {
   width: 200px;
   margin: 7% 2px 7% 0
+}
+
+:host /deep/ .ui-datatable{
+  width: 100px;
 }
 
 form {

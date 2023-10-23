@@ -3,13 +3,13 @@ package io.github.web41910231900.model;
 import io.github.web41910231900.model.request.CheckHitRequestDTO;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.Objects;
 
 public class CheckArea implements Serializable {
     private CheckHitRequestDTO request;
     private boolean result;
-    private LocalDateTime executedAt;
+    private Instant executedAt;
     private long executionTime;
 
     public CheckArea() {
@@ -32,11 +32,11 @@ public class CheckArea implements Serializable {
         this.result = result;
     }
 
-    public LocalDateTime getExecutedAt() {
+    public Instant getExecutedAt() {
         return executedAt;
     }
 
-    public void setExecutedAt(LocalDateTime executedAt) {
+    public void setExecutedAt(Instant executedAt) {
         this.executedAt = executedAt;
     }
 

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 
 @CrossOrigin
 @RestController
@@ -24,7 +25,7 @@ public class AreaCheckController {
         long startTime = System.nanoTime();
         result.setResult(AreaResultChecker.getResult(rq.getX(), rq.getY(), rq.getR()));
         long endTime = System.nanoTime();
-        result.setExecutedAt(LocalDateTime.now());
+        result.setExecutedAt(LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant());
         result.setExecutionTime(endTime - startTime);
         return ResponseEntity.ok(result);
     }

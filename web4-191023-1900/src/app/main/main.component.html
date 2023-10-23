@@ -153,6 +153,28 @@
         </div>
       </div>
       <div id="result-table-container" class="blured-container margin">
+        <p-table [value]="results">
+          <ng-template pTemplate="header">
+            <tr>
+              <th>X</th>
+              <th>Y</th>
+              <th>R</th>
+              <th>Result</th>
+              <th>Executed At</th>
+              <th>Execution Time</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-result>
+            <tr>
+              <td>{{ result.request.x }}</td>
+              <td>{{ result.request.y }}</td>
+              <td>{{ result.request.r }}</td>
+              <td>{{ result.result }}</td>
+              <td>{{ result.executedAt | date:'dd/MM/yyyy HH:MM:SS' }}</td>
+              <td>{{ result.executionTime }}</td>
+            </tr>
+          </ng-template>
+        </p-table>
 
       </div>
     </div>

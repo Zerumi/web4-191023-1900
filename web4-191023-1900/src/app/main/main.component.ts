@@ -1,5 +1,5 @@
 import {Component, AfterViewInit, OnInit} from '@angular/core';
-import {PostResponse} from "../model";
+import {PostResponse, Result} from "../model";
 import {environment} from "../../environments/environment";
 import {HttpClient} from "@angular/common/http";
 
@@ -13,6 +13,16 @@ export class MainComponent implements OnInit, AfterViewInit{
   y_select: number = 0;
   x_select: string = '0';
   r_select: string = '0';
+  results: Result[] = [{
+    "request": {
+      "x": 2.0,
+      "y": 2.0,
+      "r": 2.0
+    },
+    "result": false,
+    "executedAt": new Date(Date.now()),
+    "executionTime": 553667
+  }];
 
   constructor(private http: HttpClient) {
   }
