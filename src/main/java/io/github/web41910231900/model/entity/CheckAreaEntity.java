@@ -19,7 +19,7 @@ public class CheckAreaEntity implements Serializable {
     private long executionTime;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long getId() {
         return id;
     }

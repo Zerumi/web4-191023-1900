@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: add logout and register" />
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="fix: add missed security policy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,6 +130,9 @@
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="http-requests-log | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -219,6 +222,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.generated-requests | #3" />
       <item itemvalue="HTTP Request.http-requests-log | #3" />
       <item itemvalue="HTTP Request.generated-requests | #1" />
       <item itemvalue="HTTP Request.generated-requests | #2" />
@@ -228,6 +232,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="HTTP Request.http-requests-log | #3" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
@@ -243,7 +248,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
       <workItem from="1697835247428" duration="41077000" />
-      <workItem from="1698073108201" duration="22606000" />
+      <workItem from="1698073108201" duration="23031000" />
     </task>
     <task id="LOCAL-00001" summary="feat: hello world on spring rest api">
       <option name="closed" value="true" />
@@ -565,14 +570,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698101618775</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="fix: add missed security policy">
+      <option name="closed" value="true" />
+      <created>1698101944588</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1698101944588</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: angular new data component" />
     <MESSAGE value="feat: primeng button example" />
     <MESSAGE value="feat: front from 3rd lab" />
     <MESSAGE value="fix: update response types in controllers" />
@@ -597,7 +609,8 @@
     <MESSAGE value="fix: broken path in gitignore" />
     <MESSAGE value="feat: add rest getting all the results of current user" />
     <MESSAGE value="feat: add logout and register" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add logout and register" />
+    <MESSAGE value="fix: add missed security policy" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: add missed security policy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
