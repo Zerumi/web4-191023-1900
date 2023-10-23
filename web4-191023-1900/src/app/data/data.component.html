@@ -1,14 +1,34 @@
-
-<form name="form" (ngSubmit)="login()" #f="ngForm">
-  <div>
-    <label for="username">Username</label>
-    <input id="username" type="text" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+  <div id="container" class="margin">
+    <div id="header" class="blured-container round-container margin">
+      <p>web4-191023-1900</p>
+      <p>by Afanasyev Kirill Aleksandrovich, group no. P3206</p>
+      <p>Variant no. 1900</p>
+    </div>
+    <div id="main" class="margin">
+      <div id="clock-container" class="margin blured-container round-container">
+        <form id="time-form" class="margin">
+          <p>
+            Welcome again! Enjoy current time:
+          </p>
+        </form>
+      </div>
+      <div id="redirect-container" class="margin blured-container round-container fit-content-container">
+        <form name="form" (ngSubmit)="login()" #f="ngForm">
+          <div>
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+          </div>
+          <div>
+            <button>Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="footer" class="blured-container round-container margin">
+      <p>Copyright © Zerumi, 2023. Licensed under <a href="${pageContext.request.contextPath}/LICENSE">ISC license</a>. Plagiarism is prohibited.</p>
+    </div>
   </div>
-  <div>
-    <label for="password">Password</label>
-    <input id="password" type="password" name="password" [(ngModel)]="model.password" #password="ngModel" required />
-  </div>
-  <div>
-    <button>Login</button>
-  </div>
-</form>

@@ -230,16 +230,6 @@ input[type=button].selected {
   height: fit-content;
 }
 
-#clock-container form {
-  margin: 2%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-}
-
 #footer {
   & p {
     margin: auto;
