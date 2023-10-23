@@ -1,5 +1,5 @@
 import {Component, AfterViewInit, OnInit} from '@angular/core';
-import {PostResponse, Result} from "../model";
+import {PostResponse, Result, ResultRequest} from "../model";
 import {environment} from "../../environments/environment";
 import {HttpClient} from "@angular/common/http";
 
@@ -48,4 +48,17 @@ export class MainComponent implements OnInit, AfterViewInit{
     )
   }
 
+  sendData() {
+    let request = new ResultRequest();
+    request.x = Number(this.x_select);
+    request.y = this.y_select;
+    request.r = Number(this.r_select);
+    this.http.post<Result>(environment.backendURL + "/app/check-hit", request)
+      .subscribe((res : Result) => {
+        if (res) {
+          this.results.push(res);
+        }
+      }
+    )
+  }
 }
