@@ -51,6 +51,7 @@ public class SecurityConfig {
         ));
         http.authorizeHttpRequests((ar) -> {
             ar.requestMatchers(mvc.pattern("/login")).permitAll();
+            ar.requestMatchers(mvc.pattern("/register")).permitAll();
             ar.anyRequest().authenticated();
         }).httpBasic(withDefaults());
         http.apply(dsl);
