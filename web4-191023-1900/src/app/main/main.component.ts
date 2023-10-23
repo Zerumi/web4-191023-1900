@@ -18,7 +18,7 @@ export class MainComponent implements OnInit, AfterViewInit{
   }
 
   ngAfterViewInit() {
-    //We're loading the player script on after view is loaded
+    // We're loading the player script on after view is loaded
     // @ts-ignore
     import('../../assets/js/graph.js');
   }
