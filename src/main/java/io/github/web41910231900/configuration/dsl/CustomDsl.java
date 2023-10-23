@@ -16,12 +16,12 @@ public class CustomDsl extends AbstractHttpConfigurer<CustomDsl, HttpSecurity> {
     private final SessionFilter sessionFilter;
 
     @Autowired
-    public CustomDsl(SessionFilter sessionFilter) {
+    public CustomDsl(final SessionFilter sessionFilter) {
         this.sessionFilter = sessionFilter;
     }
 
     @Override
-    public void configure(HttpSecurity http) {
+    public void configure(final HttpSecurity http) {
         CorsConfiguration config = new CorsConfiguration();
 
         config.setAllowCredentials(true);

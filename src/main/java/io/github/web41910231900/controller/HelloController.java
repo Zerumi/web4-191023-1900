@@ -14,7 +14,7 @@ public class HelloController {
     @GetMapping
     @CrossOrigin
     public ResponseEntity<PostResponseDTO> printHello() {
-        var response = new PostResponseDTO();
+        final var response = new PostResponseDTO();
         response.setMessage("girls sometimes may be beautiful...");
         return ResponseEntity.ok(response);
     }

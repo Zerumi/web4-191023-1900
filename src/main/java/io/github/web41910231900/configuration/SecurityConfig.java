@@ -30,11 +30,11 @@ public class SecurityConfig {
     private final CustomDsl dsl;
 
     @Autowired
-    public SecurityConfig(CurrentUserService userService,
-                          SessionFilter sessionFilter,
-                          PasswordEncoder passwordEncoder,
-                          MvcRequestMatcher.Builder mvc,
-                          CustomDsl dsl) {
+    public SecurityConfig(final CurrentUserService userService,
+                          final SessionFilter sessionFilter,
+                          final PasswordEncoder passwordEncoder,
+                          final MvcRequestMatcher.Builder mvc,
+                          final CustomDsl dsl) {
         this.userService = userService;
         this.sessionFilter = sessionFilter;
         this.passwordEncoder = passwordEncoder;
@@ -43,7 +43,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain filterChain(final HttpSecurity http) throws Exception {
         http.cors(AbstractHttpConfigurer::disable).csrf(AbstractHttpConfigurer::disable);
         http.exceptionHandling(eh -> eh.authenticationEntryPoint(
                 (rq, rs, ex) -> rs.sendError(HttpServletResponse.SC_UNAUTHORIZED,
@@ -58,7 +58,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+    public AuthenticationManager authenticationManager(final AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
     @Override

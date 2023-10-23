@@ -16,7 +16,7 @@ import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 public class AppConfig implements WebMvcConfigurer {
 
     @Override
-    public void addCorsMappings(CorsRegistry registry) {
+    public void addCorsMappings(final CorsRegistry registry) {
 
         registry.addMapping("/app/**")
                 .allowedOrigins("http://localhost:4200")
@@ -25,7 +25,7 @@ public class AppConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public MvcRequestMatcher.Builder mvc(HandlerMappingIntrospector introspector) {
+    public MvcRequestMatcher.Builder mvc(final HandlerMappingIntrospector introspector) {
         return new MvcRequestMatcher.Builder(introspector);
     }
 

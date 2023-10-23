@@ -18,7 +18,8 @@ public class AuthController {
 
     private final SessionHandler handler;
     @Autowired
-    public AuthController(AuthenticationManager manager, SessionHandler handler) {
+    public AuthController(final AuthenticationManager manager,
+                          final SessionHandler handler) {
         this.manager = manager;
         this.handler = handler;
     }
@@ -31,7 +32,7 @@ public class AuthController {
         ));
 
         final String sessionID = handler.register(dto.getUsername());
-        AuthSessionResponseDTO responseDTO = new AuthSessionResponseDTO();
+        final AuthSessionResponseDTO responseDTO = new AuthSessionResponseDTO();
         responseDTO.setSessionID(sessionID);
         return ResponseEntity.ok(responseDTO);
     }

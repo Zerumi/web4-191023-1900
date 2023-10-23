@@ -23,15 +23,16 @@ public class SessionFilter extends OncePerRequestFilter {
     private final CurrentUserService userService;
 
     @Autowired
-    public SessionFilter(SessionHandler handler, CurrentUserService userService) {
+    public SessionFilter(final SessionHandler handler,
+                         final CurrentUserService userService) {
         this.handler = handler;
         this.userService = userService;
     }
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request,
-                                    HttpServletResponse response,
-                                    FilterChain filterChain)
+    protected void doFilterInternal(final HttpServletRequest request,
+                                    final HttpServletResponse response,
+                                    final FilterChain filterChain)
             throws ServletException, IOException {
         final String sessionId = request.getHeader(HttpHeaders.AUTHORIZATION);
         if (sessionId == null || sessionId.isEmpty()) {

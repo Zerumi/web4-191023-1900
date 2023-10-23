@@ -21,11 +21,11 @@ public class JPAConfig {
 
     @Bean
     public DataSource getSource() {
-        Properties info = new Properties();
+        final Properties info = new Properties();
         try {
             info.load(this.getClass().getResourceAsStream("/db.cfg"));
         } catch (IOException ignored) { } // impossible
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        final DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUrl("jdbc:postgresql://localhost:5432/studs");
         dataSource.setUsername(info.getProperty("user"));
@@ -37,12 +37,12 @@ public class JPAConfig {
 
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
-        HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
+        final HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
         adapter.setGenerateDdl(true);
         adapter.setShowSql(true);
         adapter.setDatabasePlatform("org.hibernate.dialect.PostgreSQLDialect");
 
-        LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
+        final LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
         factoryBean.setDataSource(getSource());
         factoryBean.setJpaVendorAdapter(adapter);
         factoryBean.setPackagesToScan("io.github.web41910231900");
@@ -52,7 +52,7 @@ public class JPAConfig {
 
     @Bean
     public PlatformTransactionManager transactionManager() {
-        var object = entityManagerFactory().getObject();
+        final var object = entityManagerFactory().getObject();
         assert object != null;
         return new JpaTransactionManager(object);
     }
