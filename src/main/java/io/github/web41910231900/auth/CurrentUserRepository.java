@@ -6,14 +6,17 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 
 @Component
+@Deprecated(forRemoval = true)
 public class CurrentUserRepository {
     private static final HashMap<String, CurrentUser> users = new HashMap<>();
 
+    @Deprecated
     public CurrentUser findUserByUsername(String username) {
         return users.get(username);
     }
 
     @PostConstruct
+    @Deprecated
     public void setupUsers() {
         users.put("user1",
                 CurrentUser.newUser("user1",

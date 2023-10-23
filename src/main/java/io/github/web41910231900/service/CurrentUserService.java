@@ -1,7 +1,8 @@
 package io.github.web41910231900.service;
 
 import io.github.web41910231900.auth.CurrentUser;
-import io.github.web41910231900.auth.CurrentUserRepository;
+import io.github.web41910231900.model.entity.UserEntity;
+import io.github.web41910231900.model.entity.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -12,21 +13,21 @@ import java.util.Objects;
 @Service
 public class CurrentUserService implements UserDetailsService {
 
-    private final CurrentUserRepository repository;
+    private final UserRepository repository;
 
     @Autowired
-    public CurrentUserService(CurrentUserRepository repository) {
+    public CurrentUserService(UserRepository repository) {
         this.repository = repository;
     }
 
     @Override
     public CurrentUser loadUserByUsername(String username) throws UsernameNotFoundException {
-        final CurrentUser foundUser = repository.findUserByUsername(username);
+        final UserEntity foundUser = repository.findByUsername(username);
 
         if (foundUser == null)
             throw new UsernameNotFoundException("Cannot find user with name " + username);
 
-        return foundUser;
+        return CurrentUser.fromEntity(foundUser);
     }
 
     @Override
