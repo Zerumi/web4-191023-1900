@@ -1,5 +1,6 @@
 package io.github.web41910231900.auth;
 
+import io.github.web41910231900.model.entity.UserEntity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -16,6 +17,17 @@ public class CurrentUser implements UserDetails {
     private boolean accountNonLocked = true;
     private boolean credentialsNonExpired = true;
     private boolean enabled = true;
+
+    public static CurrentUser fromEntity(UserEntity foundUser) {
+        CurrentUser result = new CurrentUser();
+        result.setUsername(foundUser.getUsername());
+        result.setPassword(foundUser.getPassword());
+        result.setAccountNonExpired(foundUser.isAccountNonExpired());
+        result.setAccountNonLocked(foundUser.isAccountNonLocked());
+        result.setCredentialsNonExpired(foundUser.isCredentialsNonExpired());
+        result.setEnabled(foundUser.isEnabled());
+        return result;
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
