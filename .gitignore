@@ -47,3 +47,6 @@ bin/
 
 ### front ###
 .frontend-gradle-plugin/
+
+### jpa database credentials ###
+./src/main/resources/db.cfg
