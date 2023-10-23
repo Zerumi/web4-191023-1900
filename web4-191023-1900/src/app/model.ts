@@ -11,8 +11,8 @@ export class PostResponse {
 }
 
 export class LoginRequest {
-    username: String;
-    password: String;
+    username: string;
+    password: string;
 
     constructor() {
       this.username = "";

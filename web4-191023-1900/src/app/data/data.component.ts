@@ -20,7 +20,7 @@ export class DataComponent implements OnInit {
   }
 
   login() {
-    let url = environment.backendURL + '/app/login';
+    const url = environment.backendURL + '/app/login';
     this.http.post<AuthTokenResponse>(url, {
       username: this.model.username,
       password: this.model.password
