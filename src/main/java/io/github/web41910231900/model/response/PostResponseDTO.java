@@ -2,7 +2,7 @@ package io.github.web41910231900.model.response;
 
 import java.util.Objects;
 
-public class PostResponse {
+public class PostResponseDTO {
     private String message;
 
     public String getMessage() {
@@ -16,7 +16,7 @@ public class PostResponse {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof PostResponse that)) return false;
+        if (!(o instanceof PostResponseDTO that)) return false;
         return Objects.equals(getMessage(), that.getMessage());
     }
 
