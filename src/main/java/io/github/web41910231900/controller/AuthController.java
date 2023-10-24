@@ -7,11 +7,11 @@ import io.github.web41910231900.model.entity.repository.UserRepository;
 import io.github.web41910231900.model.request.UserRequestDTO;
 import io.github.web41910231900.model.response.AuthSessionResponseDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -49,10 +49,10 @@ public class AuthController {
     }
 
     @CrossOrigin
-    @PostMapping("/logout")
-    public ResponseEntity.HeadersBuilder<?> logout(Authentication authentication) {
-        handler.invalidate(authentication.getName());
-        return ResponseEntity.noContent();
+    @DeleteMapping("/logout")
+    public ResponseEntity<?> logout(@RequestHeader(HttpHeaders.AUTHORIZATION) String authentication) {
+        handler.invalidate(authentication);
+        return ResponseEntity.noContent().build();
     }
 
     @CrossOrigin
