@@ -1,15 +1,149 @@
+@media (max-width: 1179px) {
+  /* Styles for tablets and smaller screens */
+  font-size: 13px;
+}
+
+@media (max-width: 703px) {
+  /* Styles for phones and smaller screens */
+  font-size: 11px;
+}
+
+:host /deep/ .p-radiobutton-box {
+
+  @media (max-width: 1179px) {
+    /* Styles for tablets and smaller screens */
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    width: 15px;
+    height: 15px;
+  }
+
+}
+
+:host /deep/ .p-radiobutton {
+
+  @media (max-width: 1179px) {
+    /* Styles for tablets and smaller screens */
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    width: 15px;
+    height: 15px;
+  }
+}
+
+:host /deep/ .p-button{
+
+  @media (max-width: 1179px) {
+    /* Styles for tablets and smaller screens */
+    font-size: 13px;
+  }
+
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    font-size: 11px;
+  }
+}
+
 :host /deep/ .p-slider {
+  @media (max-width: 1179px) {
+    /* Styles for tablets and smaller screens */
+    width: 190px;
+  }
+
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    width: 150px;
+  }
   width: 200px;
   margin: 7% 2px 7% 0
 }
 
 :host /deep/ .ui-datatable{
+  @media (max-width: 1179px) {
+    /* Styles for tablets and smaller screens */
+    font-size: 13px;
+    width: 75px;
+  }
+
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    font-size: 11px;
+    width: 50px;
+  }
   width: 100px;
 }
 
+th, td {
+  @media (max-width: 1179px) {
+    /* Styles for tablets and smaller screens */
+    font-size: 13px;
+  }
+
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    font-size: 11px;
+  }
+
+  font-size: 15px;
+}
+
+p {
+  @media (max-width: 1179px) {
+    /* Styles for tablets and smaller screens */
+    font-size: 13px;
+  }
+
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    font-size: 11px;
+  }
+}
+
 form {
+  & p {
+    @media (max-width: 1179px) {
+      /* Styles for tablets and smaller screens */
+      font-size: 13px;
+    }
+
+    @media (max-width: 703px) {
+      /* Styles for phones and smaller screens */
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: 1179px) {
+    /* Styles for tablets and smaller screens */
+    font-size: 13px;
+  }
+
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    font-size: 11px;
+  }
+
   width: 100%;
   margin-bottom: 2%;
+}
+
+label {
+  @media (max-width: 1179px) {
+    /* Styles for tablets and smaller screens */
+    font-size: 13px;
+  }
+
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    font-size: 11px;
+  }
 }
 
 select {
@@ -182,6 +316,17 @@ input[type=button].selected {
   /* setup font in header by task */
   font-family: "Bree Serif", serif;
   color: #ffffff;
+
+  @media (max-width: 1179px) {
+    /* Styles for tablets and smaller screens */
+    font-size: 13px;
+  }
+
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    font-size: 11px;
+  }
+
   font-size: 15px;
 
   height: fit-content; /* auto size for header */
@@ -219,6 +364,18 @@ input[type=button].selected {
 }
 
 #graph {
+  @media (max-width: 1179px) {
+    /* Styles for phones and smaller screens */
+    width: 370px;
+    height: 370px;
+    padding: 2px;
+  }
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    width: 250px;
+    height: 250px;
+    padding: 2px;
+  }
   width: 500px;
   height: 500px;
   padding: 2px;
@@ -231,6 +388,16 @@ input[type=button].selected {
 }
 
 #footer {
+  @media (max-width: 1179px) {
+    /* Styles for tablets and smaller screens */
+    font-size: 13px;
+  }
+
+  @media (max-width: 703px) {
+    /* Styles for phones and smaller screens */
+    font-size: 11px;
+  }
+
   & p {
     margin: auto;
   }
