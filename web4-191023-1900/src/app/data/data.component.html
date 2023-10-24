@@ -10,6 +10,9 @@
           <p>
             Welcome again! Enjoy current time:
           </p>
+          <div class="margin select-container">
+            {{ time | date: 'hh:mm:ss a' }}
+          </div>
         </form>
       </div>
       <div id="login-container" class="margin blured-container round-container select-container">
@@ -48,7 +51,7 @@
       </div>
     </div>
     <div id="footer" class="blured-container round-container margin">
-      <p>Copyright © Zerumi, 2023. Licensed under <a href="${pageContext.request.contextPath}/LICENSE">ISC license</a>. Plagiarism is prohibited.</p>
+      <p>Copyright © Zerumi, 2023. Licensed under <a href="assets/LICENSE">ISC license</a>. Plagiarism is prohibited.</p>
     </div>
   </div>
 

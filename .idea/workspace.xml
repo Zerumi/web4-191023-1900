@@ -7,7 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: actual formula in back-end" />
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="fix: restrict main page for users with outdated tokens">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -253,15 +257,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
       <workItem from="1697835247428" duration="41077000" />
-      <workItem from="1698073108201" duration="46590000" />
-    </task>
-    <task id="LOCAL-00014" summary="feat: angular environment">
-      <option name="closed" value="true" />
-      <created>1697921163596</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1697921163596</updated>
+      <workItem from="1698073108201" duration="47280000" />
     </task>
     <task id="LOCAL-00015" summary="feat: angular new data component">
       <option name="closed" value="true" />
@@ -647,14 +643,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698126061784</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="fix: restrict main page for users with outdated tokens">
+      <option name="closed" value="true" />
+      <created>1698126439739</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1698126439739</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add rest getting all the results of current user" />
     <MESSAGE value="feat: add logout and register" />
     <MESSAGE value="fix: add missed security policy" />
     <MESSAGE value="fix: generation type in jpa" />
@@ -679,7 +682,8 @@
     <MESSAGE value="feat: actual formula in desmos" />
     <MESSAGE value="fix: clear all points on graph" />
     <MESSAGE value="feat: actual formula in back-end" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: actual formula in back-end" />
+    <MESSAGE value="fix: restrict main page for users with outdated tokens" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: restrict main page for users with outdated tokens" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

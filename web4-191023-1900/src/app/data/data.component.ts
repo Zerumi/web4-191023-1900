@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
 import {AuthTokenResponse, LoginRequest} from "../model";
@@ -10,14 +10,26 @@ import {Router} from "@angular/router";
   styleUrls: ['./data.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class DataComponent implements OnInit {
+export class DataComponent implements OnInit, OnDestroy {
+
+  time = new Date();
+  intervalId : any;
 
   model : LoginRequest = new LoginRequest();
   sessionID = '';
 
   constructor(private router: Router,
-    private http: HttpClient) { }
-  ngOnInit(): void {
+    private http: HttpClient) {
+  }
+  ngOnInit() {
+    // Using Basic Interval
+    this.intervalId = setInterval(() => {
+      this.time = new Date();
+    }, 1000);
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.intervalId);
   }
 
   login() {
