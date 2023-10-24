@@ -13,6 +13,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RadioButtonModule} from "primeng/radiobutton";
 import {RequestInterceptor} from "./request.interceptor";
 import {TableModule} from "primeng/table";
+import {TabViewModule} from "primeng/tabview";
 
 
 @NgModule({
@@ -21,18 +22,19 @@ import {TableModule} from "primeng/table";
     DataComponent,
     MainComponent
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        AppRoutingModule,
-        HttpClientModule,
-        ButtonModule,
-        SliderModule,
-        ReactiveFormsModule,
-        FormsModule,
-        RadioButtonModule,
-        TableModule
-    ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ButtonModule,
+    SliderModule,
+    ReactiveFormsModule,
+    FormsModule,
+    RadioButtonModule,
+    TableModule,
+    TabViewModule
+  ],
   providers: [{provide: HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })

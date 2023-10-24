@@ -7,9 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="fix: generation type in jpa">
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: index from lab3 + some html/css enhancements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/util/AreaResultDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/service/AreaResultService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +132,7 @@
       <recent name="$PROJECT_DIR$/web4-191023-1900/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server (web4-191023-1900)">
+  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 29.0.1.Final">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -251,7 +257,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
       <workItem from="1697835247428" duration="41077000" />
-      <workItem from="1698073108201" duration="25664000" />
+      <workItem from="1698073108201" duration="32689000" />
     </task>
     <task id="LOCAL-00001" summary="feat: hello world on spring rest api">
       <option name="closed" value="true" />
@@ -589,14 +595,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698102271246</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="feat: index from lab3 + some html/css enhancements">
+      <option name="closed" value="true" />
+      <created>1698105413822</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1698105413822</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: front from 3rd lab" />
     <MESSAGE value="fix: update response types in controllers" />
     <MESSAGE value="fix: cross-origin policy" />
     <MESSAGE value="feat: login form in front" />
@@ -621,7 +634,8 @@
     <MESSAGE value="feat: add logout and register" />
     <MESSAGE value="fix: add missed security policy" />
     <MESSAGE value="fix: generation type in jpa" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: generation type in jpa" />
+    <MESSAGE value="feat: index from lab3 + some html/css enhancements" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: index from lab3 + some html/css enhancements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -633,7 +647,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java</url>
-          <line>39</line>
+          <line>41</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
