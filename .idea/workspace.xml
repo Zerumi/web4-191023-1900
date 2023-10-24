@@ -7,16 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: index from lab3 + some html/css enhancements">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/util/AreaResultDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/service/AreaResultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: add form of login and registration" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,7 +248,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
       <workItem from="1697835247428" duration="41077000" />
-      <workItem from="1698073108201" duration="32689000" />
+      <workItem from="1698073108201" duration="33000000" />
     </task>
     <task id="LOCAL-00001" summary="feat: hello world on spring rest api">
       <option name="closed" value="true" />
@@ -603,16 +594,37 @@
       <option name="project" value="LOCAL" />
       <updated>1698105413822</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="chore: refactor checkarea service">
+      <option name="closed" value="true" />
+      <created>1698112382728</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1698112382728</updated>
+    </task>
+    <task id="LOCAL-00045" summary="fix: handle db error during registration">
+      <option name="closed" value="true" />
+      <created>1698112414873</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1698112414873</updated>
+    </task>
+    <task id="LOCAL-00046" summary="feat: add form of login and registration">
+      <option name="closed" value="true" />
+      <created>1698112432572</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1698112432572</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: update response types in controllers" />
-    <MESSAGE value="fix: cross-origin policy" />
-    <MESSAGE value="feat: login form in front" />
     <MESSAGE value="fix: repair intellij indexes" />
     <MESSAGE value="fix: repair labels in main component" />
     <MESSAGE value="fix: cors mapping" />
@@ -635,7 +647,10 @@
     <MESSAGE value="fix: add missed security policy" />
     <MESSAGE value="fix: generation type in jpa" />
     <MESSAGE value="feat: index from lab3 + some html/css enhancements" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: index from lab3 + some html/css enhancements" />
+    <MESSAGE value="chore: refactor checkarea service" />
+    <MESSAGE value="fix: handle db error during registration" />
+    <MESSAGE value="feat: add form of login and registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add form of login and registration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

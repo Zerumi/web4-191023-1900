@@ -49,7 +49,7 @@ export class MainComponent implements OnInit, AfterViewInit{
   }
 
   sendData() {
-    let request = new ResultRequest();
+    const request = new ResultRequest();
     request.x = Number(this.x_select);
     request.y = this.y_select;
     request.r = Number(this.r_select);
