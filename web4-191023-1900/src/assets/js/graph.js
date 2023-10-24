@@ -50,20 +50,20 @@ function drawGraphByR(r) {
   });
   calculator.setExpression({
     id: '2',
-    latex: '-x\\le r\\ \\left\\{x\\le0\\right\\}\\ \\left\\{r\\ge y\\ge0\\right\\}',
+    latex: '2x+r\\ \\ge y\\left\\{y\\ge0\\right\\}\\left\\{x\\le0\\right\\}',
     color: Desmos.Colors.ORANGE
   });
   calculator.setExpression({
     id: '3',
-    latex: 'y\\ =\\ r\\ \\left\\{r\\ge-x\\ge0\\right\\}',
+    latex: 'x\\le\\frac{r}{2}\\left\\{y\\ge-r\\right\\}\\left\\{x\\ge0\\right\\}\\left\\{y\\le0\\right\\}',
     color: Desmos.Colors.ORANGE
   });
   calculator.setExpression({
     id: '4',
-    latex: '-x-2y\\le r\\ \\left\\{x\\le0\\right\\}\\left\\{y\\le0\\right\\}',
+    latex: 'y=-r\\ \\left\\{\\frac{r}{2}\\ge x\\ge0\\right\\}',
     color: Desmos.Colors.ORANGE
   });
-  calculator.setExpression({id: '8', latex: 'r=' + r, lineOpacity: 0});
+  calculator.setExpression({id: '5', latex: 'r=' + r, lineOpacity: 0});
 }
 
 /*function drawPoint(x, y, r) {
