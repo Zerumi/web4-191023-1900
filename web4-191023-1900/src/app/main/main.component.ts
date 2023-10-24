@@ -1,4 +1,4 @@
-import {Component, AfterViewInit, OnInit, HostListener} from '@angular/core';
+import {Component, AfterViewInit, OnInit, HostListener, ChangeDetectorRef} from '@angular/core';
 import {GraphPoint, PostResponse, Result, ResultRequest} from "../model";
 import {environment} from "../../environments/environment";
 import {HttpClient} from "@angular/common/http";
@@ -19,7 +19,7 @@ export class MainComponent implements OnInit, AfterViewInit{
   r_select: string = '0';
   results: Result[] = [];
 
-  constructor(private http: HttpClient, private router: Router) {
+  constructor(private http: HttpClient, private router: Router, private aref : ChangeDetectorRef) {
   }
 
   ngAfterViewInit() {
@@ -80,6 +80,7 @@ export class MainComponent implements OnInit, AfterViewInit{
       .subscribe((res : Result) => {
           if (res) {
             this.results.push(res);
+            this.aref.markForCheck();
           }
         }
       )
