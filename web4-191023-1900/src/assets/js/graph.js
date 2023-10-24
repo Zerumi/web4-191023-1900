@@ -1,4 +1,5 @@
 let pointId_;
+let currentR;
 const points = new Map();
 let graph_click_enabled;
 let enable_graph_button;
@@ -35,6 +36,7 @@ function on_main_load() {
 }
 
 function drawGraphByR(r) {
+  updateR(r);
   for (let i = 0; i < pointId_; i++) {
     calculator.removeExpression({id: 'point' + i});
   }
@@ -78,8 +80,6 @@ function drawPointXY(x, y) {
 }*/
 
 function drawPointXYRRes(x, y, r, result) {
-  if (r === undefined)
-    r = 0;
   points.set('point' + pointId_, {x, y, r, result})
   calculator.setExpression({
     id: 'point' + pointId_++,
@@ -89,8 +89,7 @@ function drawPointXYRRes(x, y, r, result) {
 }
 
 function drawPointXYRResID(x, y, r, result, point_id) {
-  const actualR = Number(getCurrentR());
-  if (+actualR === +r) {
+  if (+currentR === +r) {
     calculator.setExpression({
       id: point_id,
       latex: '(' + x + ', ' + y + ')',
@@ -138,4 +137,12 @@ function handleGraphClick (evt) {
     }
   })
   window.dispatchEvent(event);
+}
+
+function updateR(r) {
+  currentR = r;
+}
+
+function resetGraph() {
+
 }
