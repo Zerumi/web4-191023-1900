@@ -154,7 +154,7 @@
         </div>
       </div>
       <div id="result-table-container" class="blured-container margin">
-        <p-table [value]="results">
+        <p-table [value]="results" sortField="executedAt" [sortOrder]="-1">
           <ng-template pTemplate="header">
             <tr>
               <th>X</th>
