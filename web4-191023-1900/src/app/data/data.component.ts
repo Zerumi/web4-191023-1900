@@ -7,7 +7,7 @@ import {Router} from "@angular/router";
 @Component({
   selector: 'app-data',
   templateUrl: './data.component.html',
-  styleUrls: ['./data.component.css'],
+  styleUrls: ['./data.component.css', '../main/main.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class DataComponent implements OnInit, OnDestroy {
