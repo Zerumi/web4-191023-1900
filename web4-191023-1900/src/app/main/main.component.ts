@@ -1,8 +1,11 @@
-import {Component, AfterViewInit, OnInit} from '@angular/core';
-import {PostResponse, Result, ResultRequest} from "../model";
+import {Component, AfterViewInit, OnInit, HostListener} from '@angular/core';
+import {GraphPoint, PostResponse, Result, ResultRequest} from "../model";
 import {environment} from "../../environments/environment";
 import {HttpClient} from "@angular/common/http";
 import {Router} from "@angular/router";
+
+declare function enable_graph() : void;
+declare function on_main_load() : void;
 
 @Component({
   selector: 'app-main',
@@ -26,6 +29,7 @@ export class MainComponent implements OnInit, AfterViewInit{
   }
 
   ngOnInit(): void {
+    on_main_load();
     this.http.get<PostResponse>(environment.backendURL + "/app/hello").subscribe(
       {
         next: (resp: PostResponse) => {
@@ -67,6 +71,25 @@ export class MainComponent implements OnInit, AfterViewInit{
     )
   }
 
+  sendDataGraph(x: number, y: number) {
+    const request = new ResultRequest();
+    request.x = x;
+    request.y = y;
+    request.r = Number(this.r_select);
+    this.http.post<Result>(environment.backendURL + "/app/check-hit", request)
+      .subscribe((res : Result) => {
+          if (res) {
+            this.results.push(res);
+          }
+        }
+      )
+  }
+
+  @HostListener('window:onGraph', ['$event.detail'])
+  onLogin(detail : GraphPoint) {
+    this.sendDataGraph(detail.x, detail.y);
+  }
+
   clearTable() {
     this.http.delete(environment.backendURL + "/app/check-hit").subscribe(
       {
@@ -94,6 +117,6 @@ export class MainComponent implements OnInit, AfterViewInit{
   }
 
   enable_graph() {
-
+    enable_graph();
   }
 }

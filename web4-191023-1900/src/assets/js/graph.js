@@ -1,30 +1,38 @@
-var pointId_ = 0;
-var points = new Map();
-var graph_click_enabled = false;
-var enable_graph_button = document.getElementById('enable-graph');
-var elt = document.getElementById('graph');
-var calculator = Desmos.GraphingCalculator(elt, {
-  keypad: false,
-  expressions: false,
-  settingsMenu: false,
-  invertedColors: true,
-  xAxisLabel: 'x',
-  yAxisLabel: 'y',
-  xAxisStep: 1,
-  yAxisStep: 1,
-  xAxisArrowMode: Desmos.AxisArrowModes.POSITIVE,
-  yAxisArrowMode: Desmos.AxisArrowModes.POSITIVE
-});
+let pointId_;
+const points = new Map();
+let graph_click_enabled;
+let enable_graph_button;
+let elt;
+let calculator;
 
-calculator.setMathBounds({
-  left: -5,
-  right: 5,
-  bottom: -5,
-  top: 5
-});
+function on_main_load() {
+  pointId_ = 0;
+  graph_click_enabled = false;
+  enable_graph_button = document.querySelector('#enable-graph');
+  elt = document.querySelector('#graph');
+  calculator = Desmos.GraphingCalculator(elt, {
+    keypad: false,
+    expressions: false,
+    settingsMenu: false,
+    invertedColors: true,
+    xAxisLabel: 'x',
+    yAxisLabel: 'y',
+    xAxisStep: 1,
+    yAxisStep: 1,
+    xAxisArrowMode: Desmos.AxisArrowModes.POSITIVE,
+    yAxisArrowMode: Desmos.AxisArrowModes.POSITIVE
+  });
 
-var newDefaultState = calculator.getState();
-calculator.setDefaultState(newDefaultState);
+  calculator.setMathBounds({
+    left: -5,
+    right: 5,
+    bottom: -5,
+    top: 5
+  });
+
+  var newDefaultState = calculator.getState();
+  calculator.setDefaultState(newDefaultState);
+}
 
 function drawGraphByR(r) {
   for (let i = 0; i < pointId_; i++) {
@@ -123,8 +131,11 @@ function handleGraphClick (evt) {
 
   if (!inRectangle(mathCoordinates, calculator.graphpaperBounds.mathCoordinates)) return;
 
-  document.getElementById("graphSelect:graph-x").value = mathCoordinates.x;
-  document.getElementById("graphSelect:graph-y").value = mathCoordinates.y;
-
-  // upadte bean vals
+  const event = new CustomEvent('onGraph', {
+    detail: {
+      x: mathCoordinates.x,
+      y: mathCoordinates.y
+    }
+  })
+  window.dispatchEvent(event);
 }

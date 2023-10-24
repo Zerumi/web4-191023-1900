@@ -53,3 +53,13 @@ export class Result {
       this.executionTime = 0;
     }
 }
+
+export class GraphPoint {
+  x : number;
+  y : number;
+
+  constructor() {
+    this.x = 0;
+    this.y = 0;
+  }
+}

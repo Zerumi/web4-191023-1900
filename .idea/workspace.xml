@@ -7,16 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="chore: build.gradle styling">
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: clear table and logout on front">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/entity/repository/CheckAreaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/entity/repository/CheckAreaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/service/AreaResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/service/AreaResultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/assets/js/graph.js" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/assets/js/graph.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,10 +128,7 @@
       <recent name="$PROJECT_DIR$/web4-191023-1900/src" />
     </key>
   </component>
-  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 29.0.1.Final">
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.Angular CLI Server (web4-191023-1900)">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -224,6 +216,9 @@
     <configuration name="Angular Application (web4-191023-1900)" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
+    <configuration name="localhost:4200" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:4200/">
+      <method v="2" />
+    </configuration>
     <configuration name="Angular CLI Server (web4-191023-1900)" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/web4-191023-1900/package.json" />
       <command value="run" />
@@ -238,19 +233,19 @@
       <item itemvalue="HTTP Request.generated-requests | #3" />
       <item itemvalue="HTTP Request.generated-requests | #4" />
       <item itemvalue="HTTP Request.http-requests-log | #3" />
-      <item itemvalue="HTTP Request.generated-requests | #1" />
       <item itemvalue="HTTP Request.generated-requests | #2" />
       <item itemvalue="JavaScript Debug.Angular Application (web4-191023-1900)" />
+      <item itemvalue="JavaScript Debug.localhost:4200" />
       <item itemvalue="JBoss/WildFly Server.JBoss/WildFly 29.0.1.Final" />
       <item itemvalue="npm.Angular CLI Server (web4-191023-1900)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.localhost:4200" />
         <item itemvalue="HTTP Request.generated-requests | #4" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="HTTP Request.http-requests-log | #3" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -263,47 +258,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
       <workItem from="1697835247428" duration="41077000" />
-      <workItem from="1698073108201" duration="39408000" />
-    </task>
-    <task id="LOCAL-00002" summary="chore: web and ide configuration">
-      <option name="closed" value="true" />
-      <created>1697843888271</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1697843888271</updated>
-    </task>
-    <task id="LOCAL-00003" summary="chore: update .gitignore">
-      <option name="closed" value="true" />
-      <created>1697843907622</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1697843907622</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fix: typo in .gitignore">
-      <option name="closed" value="true" />
-      <created>1697846206118</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1697846206118</updated>
-    </task>
-    <task id="LOCAL-00005" summary="feat: models of area checking, rest api integration of check models">
-      <option name="closed" value="true" />
-      <created>1697846259386</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1697846259386</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat: remove or update some files from hello world example">
-      <option name="closed" value="true" />
-      <created>1697847116585</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1697847116585</updated>
+      <workItem from="1698073108201" duration="42398000" />
     </task>
     <task id="LOCAL-00007" summary="chore: qodana inspections">
       <option name="closed" value="true" />
@@ -657,19 +612,53 @@
       <option name="project" value="LOCAL" />
       <updated>1698115086691</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="feat: add delete all entries of user">
+      <option name="closed" value="true" />
+      <created>1698119026603</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1698119026603</updated>
+    </task>
+    <task id="LOCAL-00052" summary="feat: add delete all entries of user in service">
+      <option name="closed" value="true" />
+      <created>1698119054152</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1698119054152</updated>
+    </task>
+    <task id="LOCAL-00053" summary="feat: add delete all entries of user in repo">
+      <option name="closed" value="true" />
+      <created>1698119081265</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1698119081265</updated>
+    </task>
+    <task id="LOCAL-00054" summary="fix: logout token providing">
+      <option name="closed" value="true" />
+      <created>1698119113441</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1698119113441</updated>
+    </task>
+    <task id="LOCAL-00055" summary="feat: clear table and logout on front">
+      <option name="closed" value="true" />
+      <created>1698119171512</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1698119171512</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: component naming" />
-    <MESSAGE value="feat: add result table" />
-    <MESSAGE value="feat: backend request and table filling" />
-    <MESSAGE value="fix: update dependencies" />
-    <MESSAGE value="chore: update gitignore" />
-    <MESSAGE value="feat: update dependencies" />
     <MESSAGE value="feat: add jpa entities" />
     <MESSAGE value="feat: add converting between jpa and model" />
     <MESSAGE value="feat: add jpa configuration" />
@@ -689,16 +678,28 @@
     <MESSAGE value="fix: apply datetime from backend" />
     <MESSAGE value="chore: remove default value from table filling" />
     <MESSAGE value="chore: build.gradle styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: build.gradle styling" />
+    <MESSAGE value="feat: add delete all entries of user" />
+    <MESSAGE value="feat: add delete all entries of user in service" />
+    <MESSAGE value="feat: add delete all entries of user in repo" />
+    <MESSAGE value="fix: logout token providing" />
+    <MESSAGE value="chore: optimize imports in security config" />
+    <MESSAGE value="feat: clear table and logout on front" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: clear table and logout on front" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.ts</url>
-          <line>85</line>
+          <line>108</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.ts</url>
+          <line>89</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
