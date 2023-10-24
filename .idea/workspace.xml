@@ -7,7 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: add points on graph" />
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="fix: clear all points on graph">
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/util/AreaResultChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/util/AreaResultChecker.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +125,7 @@
       <recent name="$PROJECT_DIR$/web4-191023-1900/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server (web4-191023-1900)">
+  <component name="RunManager" selected="JBoss/WildFly Server.JBoss/WildFly 29.0.1.Final">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -253,23 +255,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
       <workItem from="1697835247428" duration="41077000" />
-      <workItem from="1698073108201" duration="45921000" />
-    </task>
-    <task id="LOCAL-00011" summary="feat: add base angular front">
-      <option name="closed" value="true" />
-      <created>1697897875345</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1697897875345</updated>
-    </task>
-    <task id="LOCAL-00012" summary="feat: angular project structure">
-      <option name="closed" value="true" />
-      <created>1697920741152</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1697920741152</updated>
+      <workItem from="1698073108201" duration="46223000" />
     </task>
     <task id="LOCAL-00013" summary="feat: update security config">
       <option name="closed" value="true" />
@@ -647,15 +633,29 @@
       <option name="project" value="LOCAL" />
       <updated>1698125180294</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="feat: actual formula in desmos">
+      <option name="closed" value="true" />
+      <created>1698125551688</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1698125551688</updated>
+    </task>
+    <task id="LOCAL-00061" summary="fix: clear all points on graph">
+      <option name="closed" value="true" />
+      <created>1698125696414</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1698125696414</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: some code enhancements" />
-    <MESSAGE value="feat: add results to db" />
     <MESSAGE value="fix: broken path in gitignore" />
     <MESSAGE value="feat: add rest getting all the results of current user" />
     <MESSAGE value="feat: add logout and register" />
@@ -679,7 +679,9 @@
     <MESSAGE value="feat: reverse order in table" />
     <MESSAGE value="fix: misupdating table" />
     <MESSAGE value="feat: add points on graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add points on graph" />
+    <MESSAGE value="feat: actual formula in desmos" />
+    <MESSAGE value="fix: clear all points on graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: clear all points on graph" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
