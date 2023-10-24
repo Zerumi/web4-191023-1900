@@ -26,6 +26,10 @@ export class DataComponent implements OnInit, OnDestroy {
     this.intervalId = setInterval(() => {
       this.time = new Date();
     }, 1000);
+
+    if (localStorage.getItem('token')) {
+        this.router.navigate(['main'])
+    }
   }
 
   ngOnDestroy() {
@@ -51,7 +55,7 @@ export class DataComponent implements OnInit, OnDestroy {
           if (res) {
             this.sessionID = res.sessionID;
 
-            sessionStorage.setItem(
+            localStorage.setItem(
               'token',
               this.sessionID
             );
