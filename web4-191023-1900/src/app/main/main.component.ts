@@ -8,6 +8,7 @@ declare function enable_graph() : void;
 declare function on_main_load() : void;
 declare function drawGraphByR(r : number) : void;
 declare function drawPointXYRRes(x : number, y : number, r : number, result : boolean) : void;
+declare function clearAllPoints() : void;
 
 @Component({
   selector: 'app-main',
@@ -100,6 +101,7 @@ export class MainComponent implements OnInit, AfterViewInit{
       {
         next: () => {
           this.results = []
+          clearAllPoints();
         },
 
         error: (err) => {

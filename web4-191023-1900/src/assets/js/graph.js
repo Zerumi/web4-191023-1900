@@ -143,6 +143,7 @@ function updateR(r) {
   currentR = r;
 }
 
-function resetGraph() {
-
+function clearAllPoints() {
+  points.clear();
+  drawGraphByR(currentR);
 }
