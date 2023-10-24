@@ -1,25 +1,25 @@
-package io.github.web41910231900.util;
+package io.github.web41910231900.service;
 
 import io.github.web41910231900.model.CheckArea;
 import io.github.web41910231900.model.entity.CheckAreaEntity;
 import io.github.web41910231900.model.entity.repository.CheckAreaRepository;
 import io.github.web41910231900.model.entity.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.security.Principal;
 import java.time.ZoneId;
 import java.util.List;
 
-@Component
-public class AreaResultDB {
+@Service
+public class AreaResultService {
 
     private final UserRepository userRepository;
     private final CheckAreaRepository areaRepository;
 
     @Autowired
-    public AreaResultDB(final UserRepository userRepository,
-                        final CheckAreaRepository areaRepository) {
+    public AreaResultService(final UserRepository userRepository,
+                             final CheckAreaRepository areaRepository) {
         this.areaRepository = areaRepository;
         this.userRepository = userRepository;
     }

@@ -3,7 +3,7 @@ package io.github.web41910231900.controller;
 import io.github.web41910231900.model.CheckArea;
 import io.github.web41910231900.model.request.CheckHitRequestDTO;
 import io.github.web41910231900.util.AreaResultChecker;
-import io.github.web41910231900.util.AreaResultDB;
+import io.github.web41910231900.service.AreaResultService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,10 +18,10 @@ import java.util.List;
 @RequestMapping("/check-hit")
 public class AreaCheckController {
 
-    private final AreaResultDB db;
+    private final AreaResultService db;
 
     @Autowired
-    public AreaCheckController(final AreaResultDB db) {
+    public AreaCheckController(final AreaResultService db) {
         this.db = db;
     }
 
