@@ -112,10 +112,12 @@ function enable_graph() {
     elt.removeEventListener('click', handleGraphClick);
     graph_click_enabled = false;
     enable_graph_button.textContent = "Enable graph aiming";
+    enable_graph_button.style.fontWeight = 'bold';
   } else {
     elt.addEventListener('click', handleGraphClick);
     graph_click_enabled = true;
     enable_graph_button.textContent = "Disable graph aiming";
+    enable_graph_button.style.fontWeight = 'bold';
   }
 }
 
