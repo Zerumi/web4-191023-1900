@@ -13,16 +13,7 @@ export class MainComponent implements OnInit, AfterViewInit{
   y_select: number = 0;
   x_select: string = '0';
   r_select: string = '0';
-  results: Result[] = [{
-    "request": {
-      "x": 2.0,
-      "y": 2.0,
-      "r": 2.0
-    },
-    "result": false,
-    "executedAt": new Date(Date.now()),
-    "executionTime": 553667
-  }];
+  results: Result[] = [];
 
   constructor(private http: HttpClient) {
   }
@@ -43,6 +34,19 @@ export class MainComponent implements OnInit, AfterViewInit{
         error: (err) => {
           console.error(err);
           console.log(err.message)
+        }
+      }
+    )
+
+    this.http.get<Result[]>(environment.backendURL + "/app/check-hit").subscribe(
+      {
+        next: (resp: Result[]) => {
+          this.results = resp;
+        },
+
+        error: (err) => {
+          console.error(err);
+          console.log(err.message);
         }
       }
     )
