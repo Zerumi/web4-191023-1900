@@ -45,4 +45,11 @@ public class AreaCheckController {
     public ResponseEntity<List<CheckArea>> allResultsByUser(Principal principal) {
         return ResponseEntity.ok(db.getAllByUsername(principal));
     }
+
+    @CrossOrigin
+    @DeleteMapping
+    public ResponseEntity<?> deleteAll(Principal principal) {
+        db.removeAllFromUser(principal);
+        return ResponseEntity.noContent().build();
+    }
 }
