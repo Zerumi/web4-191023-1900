@@ -2,6 +2,7 @@ import {Component, AfterViewInit, OnInit} from '@angular/core';
 import {PostResponse, Result, ResultRequest} from "../model";
 import {environment} from "../../environments/environment";
 import {HttpClient} from "@angular/common/http";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-main',
@@ -15,7 +16,7 @@ export class MainComponent implements OnInit, AfterViewInit{
   r_select: string = '0';
   results: Result[] = [];
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private router: Router) {
   }
 
   ngAfterViewInit() {
@@ -64,5 +65,35 @@ export class MainComponent implements OnInit, AfterViewInit{
         }
       }
     )
+  }
+
+  clearTable() {
+    this.http.delete(environment.backendURL + "/app/check-hit").subscribe(
+      {
+        next: () => {
+          this.results = []
+        },
+
+        error: (err) => {
+          console.error(err);
+          console.log(err.message);
+        }
+      }
+    );
+  }
+
+  logout() {
+    this.http.delete(environment.backendURL + "/app/logout").subscribe(() => {
+      sessionStorage.removeItem('token');
+      this.router.navigate(['']).then(r => {
+        if (!r) {
+          console.error("something went wrong...");
+        }
+      });
+    });
+  }
+
+  enable_graph() {
+
   }
 }

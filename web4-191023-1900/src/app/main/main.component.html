@@ -130,20 +130,20 @@
 
         <div id="another-way-container" class="select-container margin">
           <label for="enable-graph">Or...</label>
-          <button id="enable-graph" type="button" pButton onclick="enable_graph()" label="Enable graph aiming"></button>
+          <button id="enable-graph" type="button" pButton (click)="enable_graph()" label="Enable graph aiming"></button>
         </div>
         <form>
           <input type="hidden" name="clear" value="1" />
           <div id="clear-table-container" class="select-container margin">
             <label for="clear-table">You may also</label>
-            <button id="clear-table" pButton label="Clear table">
+            <button id="clear-table" pButton (click)="clearTable()" label="Clear table">
 
             </button>
           </div>
         </form>
         <form>
           <div id="return-index-container" class="select-container margin">
-            <button id="return-to-index" pButton label="Logout and Return to index page"></button>
+            <button id="return-to-index" pButton (click)="logout()" label="Logout and Return to index page"></button>
           </div>
         </form>
       </div>

@@ -7,11 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="fix: apply datetime from backend">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___io_github___web4_191023_1900_1_0_SNAPSHOT_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___io_github___web4_191023_1900_1_0_SNAPSHOT_war__exploded_.xml" afterDir="false" />
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="chore: build.gradle styling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AreaCheckController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/entity/repository/CheckAreaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/model/entity/repository/CheckAreaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/service/AreaResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/web41910231900/service/AreaResultService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -259,15 +263,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
       <workItem from="1697835247428" duration="41077000" />
-      <workItem from="1698073108201" duration="35486000" />
-    </task>
-    <task id="LOCAL-00001" summary="feat: hello world on spring rest api">
-      <option name="closed" value="true" />
-      <created>1697838847957</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1697838847957</updated>
+      <workItem from="1698073108201" duration="39408000" />
     </task>
     <task id="LOCAL-00002" summary="chore: web and ide configuration">
       <option name="closed" value="true" />
@@ -637,15 +633,37 @@
       <option name="project" value="LOCAL" />
       <updated>1698112539450</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="fix: apply datetime from backend">
+      <option name="closed" value="true" />
+      <created>1698114950407</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1698114950407</updated>
+    </task>
+    <task id="LOCAL-00049" summary="chore: remove default value from table filling">
+      <option name="closed" value="true" />
+      <created>1698114967653</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1698114967653</updated>
+    </task>
+    <task id="LOCAL-00050" summary="chore: build.gradle styling">
+      <option name="closed" value="true" />
+      <created>1698115086689</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1698115086691</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: cors mapping" />
-    <MESSAGE value="feat: claiming login in check-hit controller" />
     <MESSAGE value="fix: component naming" />
     <MESSAGE value="feat: add result table" />
     <MESSAGE value="feat: backend request and table filling" />
@@ -669,25 +687,18 @@
     <MESSAGE value="feat: add form of login and registration" />
     <MESSAGE value="fix: codefactor fixes" />
     <MESSAGE value="fix: apply datetime from backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: apply datetime from backend" />
+    <MESSAGE value="chore: remove default value from table filling" />
+    <MESSAGE value="chore: build.gradle styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: build.gradle styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/github/web41910231900/auth/session/SessionHandler.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/github/web41910231900/controller/AuthController.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/github/web41910231900/service/CurrentUserService.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="5" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.ts</url>
+          <line>85</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
