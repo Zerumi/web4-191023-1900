@@ -42,6 +42,11 @@ export class MainComponent implements OnInit, AfterViewInit{
         error: (err) => {
           console.error(err);
           console.log(err.message)
+          this.router.navigate(['']).then(r => {
+            if (!r){
+              console.error('something went wrong...')
+            }
+          });
         }
       }
     )
