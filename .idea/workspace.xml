@@ -7,10 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="feat: adapt main page to mobile and tablet">
+    <list default="true" id="f828b027-fdeb-44a7-a58b-7ebb7640817b" name="Changes" comment="fix: reset bold font in enable graph button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/data/data.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web4-191023-1900/src/app/main/main.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,23 +258,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697835246314</updated>
       <workItem from="1697835247428" duration="41077000" />
-      <workItem from="1698073108201" duration="49618000" />
-    </task>
-    <task id="LOCAL-00017" summary="feat: front from 3rd lab">
-      <option name="closed" value="true" />
-      <created>1697984876422</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1697984876422</updated>
-    </task>
-    <task id="LOCAL-00018" summary="fix: update response types in controllers">
-      <option name="closed" value="true" />
-      <created>1698024030140</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1698024030140</updated>
+      <workItem from="1698073108201" duration="50556000" />
     </task>
     <task id="LOCAL-00019" summary="fix: cross-origin policy">
       <option name="closed" value="true" />
@@ -652,15 +636,29 @@
       <option name="project" value="LOCAL" />
       <updated>1698128779061</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="feat: adapt data page to mobile and tablet">
+      <option name="closed" value="true" />
+      <created>1698129303775</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1698129303775</updated>
+    </task>
+    <task id="LOCAL-00067" summary="fix: reset bold font in enable graph button">
+      <option name="closed" value="true" />
+      <created>1698129463794</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1698129463794</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: generation type in jpa" />
-    <MESSAGE value="feat: index from lab3 + some html/css enhancements" />
     <MESSAGE value="chore: refactor checkarea service" />
     <MESSAGE value="fix: handle db error during registration" />
     <MESSAGE value="feat: add form of login and registration" />
@@ -684,7 +682,9 @@
     <MESSAGE value="fix: restrict main page for users with outdated tokens" />
     <MESSAGE value="feat: add clock in index page" />
     <MESSAGE value="feat: adapt main page to mobile and tablet" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adapt main page to mobile and tablet" />
+    <MESSAGE value="feat: adapt data page to mobile and tablet" />
+    <MESSAGE value="fix: reset bold font in enable graph button" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: reset bold font in enable graph button" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

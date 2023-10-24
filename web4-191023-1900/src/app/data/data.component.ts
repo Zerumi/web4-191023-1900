@@ -64,6 +64,9 @@ export class DataComponent implements OnInit, OnDestroy {
           } else {
             console.error("auth failed");
           }
+        },
+        err => {
+          alert(/<body.*?>([\s\S]*)<\/body>/.exec(err.error)![1]);
         }
       )
   }
