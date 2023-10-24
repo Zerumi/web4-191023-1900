@@ -4,6 +4,7 @@ import io.github.web41910231900.model.CheckArea;
 import io.github.web41910231900.model.entity.CheckAreaEntity;
 import io.github.web41910231900.model.entity.repository.CheckAreaRepository;
 import io.github.web41910231900.model.entity.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -41,5 +42,10 @@ public class AreaResultService {
                 .findAllByOwnerID(userRepository.findByUsername(principal.getName()));
 
         return resultEntity.stream().map(CheckArea::fromEntity).toList();
+    }
+
+    @Transactional
+    public void removeAllFromUser(Principal principal) {
+        areaRepository.deleteAllByOwnerID(userRepository.findByUsername(principal.getName()));
     }
 }
