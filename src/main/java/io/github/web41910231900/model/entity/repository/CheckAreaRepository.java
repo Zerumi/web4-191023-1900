@@ -12,4 +12,5 @@ public interface CheckAreaRepository extends JpaRepository<CheckAreaEntity, Long
 
     List<CheckAreaEntity> findAllByOwnerID(UserEntity entity);
 
+    void deleteAllByOwnerID(UserEntity entity);
 }
